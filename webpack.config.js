@@ -321,7 +321,9 @@ const serverConfig = {
         isProd ? 'production' : 'development'
       ),
     }),
-    new GasPlugin(),
+    new GasPlugin({
+      autoGlobalExportsFiles: ['**/*.ts']
+    }),
   ],
 };
 
