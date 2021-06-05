@@ -1,7 +1,17 @@
 {
   "compilerOptions": {
-    "types": ["gas-types-detailed"],
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop":true,
+    "forceConsistentCasingInFileNames":true,
+    "lib":[
+       "ES2019",
+       "DOM"
+    ],
+    "module":"commonjs",
+    "target":"es5",
+    "types":[
+       "gas-types-detailed",
+       "node"
+    ]
   }
 }
